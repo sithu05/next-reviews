@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 
 import NavBar from "@/components/NavBar";
 
+import { exo2, orbitron } from "@/app/fonts";
+
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${orbitron.variable} ${exo2.variable}`}>
       <body className="flex flex-col min-h-screen px-4 py-2 bg-orange-50">
         <header className="">
           <NavBar />
